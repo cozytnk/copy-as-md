@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "copy-as-md",
+  "description": "",
+
+  "icons": {
+    "16": "assets/favicon.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "background",
+    "clipboardWrite",
+    "<all_urls>"
+  ],
+
+  "browser_action": {
+  },
+
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  }
+
+}
