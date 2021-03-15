@@ -1,5 +1,8 @@
 
 
+chrome.browserAction.setBadgeBackgroundColor({ color: '#444' })
+
+
 chrome.browserAction.onClicked.addListener(tab => {
 
   // [javascript - How to get Clipboard data in Chrome Extension? - Stack Overflow](https://stackoverflow.com/questions/22702446/how-to-get-clipboard-data-in-chrome-extension)
