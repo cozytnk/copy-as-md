@@ -27,7 +27,8 @@ chrome.browserAction.onClicked.addListener(tab => {
   }
 
   try {
-    copyTextToClipboard(`[${tab.title}](${tab.url})`)
+    const text = decodeURIComponent(`[${tab.title}](${tab.url})`)
+    copyTextToClipboard(text)
     setBadgeTextThenRemove('ok!', 2000)
   } catch {
     setBadgeTextThenRemove('ng...', 2000)
